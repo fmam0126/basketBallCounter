@@ -1,0 +1,42 @@
+@font-face {
+  font-family: cursedTimer; /* set name */
+  src: url(CursedTimerUlil-Aznm.ttf); /* url of the font */
+}
+
+
+body {
+    margin: 0;
+}
+.score-container{
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+}
+.titles{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    height: fit-content;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.counter{
+    font-family: cursedTimer;
+    font-size: 50px;
+    background-color: black;
+    color: red;
+    padding: 0px;
+    padding-top: 6px;
+    padding-right: 6px;
+    padding-left: 6px;
+}
+.counter-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
