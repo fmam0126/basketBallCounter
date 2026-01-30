@@ -22,6 +22,7 @@ function updatescore(team){
     }
     highlightLeader()
 }
+
 function highlightLeader(){
     if(scoreHome > scoreAway){
         counterHomeEl.style.color = "orange"
@@ -48,9 +49,22 @@ function addscore(team, points){
     }
     updatescore(team)
 }
+// function addscore(e){
+//     if(e.target.parentElement.id === "home"){
+//         console.log("home")
+//     }
+// }
+// function resetScores(){
+//     scoreHome = 0
+//     scoreAway = 0
+//     updatescore("home")
+//     updatescore("away")
+// }
+
 // add +1 to home score
 function addHomeScore1(){
     addscore("home", 1)
+    // console.log(e)
 }
 // add +2 to home score
 function addHomeScore2(){
@@ -69,5 +83,5 @@ function addAwayScore2(){
     addscore("away", 2)
 }
 function addAwayScore3(){
-    addscore("away", 2)
+    addscore("away", 3)
 }
