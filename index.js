@@ -20,6 +20,21 @@ function updatescore(team){
             counterAwayEl.textContent = scoreAway
         }
     }
+    highlightLeader()
+}
+function highlightLeader(){
+    if(scoreHome > scoreAway){
+        counterHomeEl.style.color = "orange"
+        counterAwayEl.style.color = "red"
+    }else if (scoreAway > scoreHome){
+        counterAwayEl.style.color = "orange"
+        counterHomeEl.style.color = "red"
+    }else{
+        counterAwayEl.style.color = "red"
+        counterHomeEl.style.color = "red"
+    }
+
+
 }
 // checks team and adds points to their respective scores 
 // and checks if it is more than 99 and sets it back to 99 before updating the screen
